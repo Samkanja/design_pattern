@@ -15,3 +15,6 @@ class RockPaperScissors:
     
     def get_computer_choice(self) -> str:
         self.computer_choice = random.choice(OPTIONS)
+
+    def display_options(self):
+        print('\n'.join(f'{i} {option.title()}' for i, option in enumerate(OPTIONS)))
